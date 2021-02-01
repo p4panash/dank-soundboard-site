@@ -1,0 +1,23 @@
+.Bounce-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 15px);
+  z-index: -1 ;
+}
+
+.Bouncing-images {
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 30px;
+}
+
+@keyframes bounce {
+  0% {top: 0%;}
+  100% {top: calc(100% - 25px);}
+}
+
+@keyframes spin {
+  100% {transform: rotate(360deg);}
+}
