@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Home extends React.Component {
+class Commands extends React.Component {
   render() {
     return(
       <h1>Commands</h1>
@@ -8,4 +8,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Commands;
