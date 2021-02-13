@@ -1,0 +1,20 @@
+#Nav {
+  display: flex;
+  justify-content: center;
+}
+
+#Nav ul {
+  list-style: none;
+  padding-top: 3  0px;
+}
+
+#Nav ul li {
+  display: inline;
+  margin: 0px 20px 0px 20px;
+  font-size: 25px;
+}
+
+#Nav ul li a {
+  color: white;
+  text-decoration: none;
+}

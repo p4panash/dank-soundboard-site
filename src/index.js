@@ -2,12 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import DankImages from './components/DankImages';
 // import reportWebVitals from './reportWebVitals';  
 
 ReactDOM.render(
   <React.StrictMode>
-    <DankImages />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
