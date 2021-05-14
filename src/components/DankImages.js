@@ -13,7 +13,7 @@ function DankImages() {
     let time = Math.floor(Math.random() * 4) + 2;
     let iterations = 12 / time;
     element.push(<BounceImage source="/image.png" index={i+1} duration={time + "s"} iteration={iterations} 
-      animationName={time == 4 ? "bounce" : "bounce, spin"}/>)
+      animationName={time === 4 ? "bounce" : "bounce, spin"}/>)
   }
 
   return(
