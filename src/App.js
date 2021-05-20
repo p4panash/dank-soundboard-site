@@ -8,19 +8,26 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div className="Grid-container">
       <DankImages/>
       <Router>
-        <NavBar />
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/commands">
-          <Commands />
-        </Route>
-        <Route exact path="/support">
-          <Support />
-        </Route>
+        <div className="Navbar">
+          <NavBar />
+        </div>
+        <div className="Content">
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path="/commands">
+            <Commands />
+          </Route>
+          <Route exact path="/support">
+            <Support />
+          </Route>
+        </div>
+        <div className="Footer">
+          Made with &#129504; by Papanash
+        </div>
       </Router>
     </div>
   );
