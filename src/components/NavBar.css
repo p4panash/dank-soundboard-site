@@ -20,8 +20,13 @@
 
 #Nav a.Icon {
   display: none;
-  color: "white";
+  color: #F0803C;
   font-size: 25px;
+}
+
+#Nav .Selected {
+  color: #EDF060;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 601px) {

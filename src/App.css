@@ -11,9 +11,14 @@ p {
 }
 
 .Footer a {
+  color: #171219;
   text-decoration: none;
-  color: black;
   font-weight: bold;
+}
+
+.Footer p {
+  color: #171219;
+  margin-top: 0;
 }
 
 .Content {

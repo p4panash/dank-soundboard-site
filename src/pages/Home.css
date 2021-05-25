@@ -48,24 +48,24 @@
   display: block;
   margin: 10vh auto 0 auto;
   border: none;
-  color: white;
+  color: #EDF060;
   padding: 20px 35px;
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   text-transform: capitalize;
   font-variant: small-caps;
   text-decoration: none;
   font-size: 16px;
 
   background:
-    linear-gradient(to right, black 4px, transparent 4px) 0 0,
-    linear-gradient(to right, black 4px, transparent 4px) 0 100%,
-    linear-gradient(to left, black 4px, transparent 4px) 100% 0,
-    linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
-    linear-gradient(to bottom, black 4px, transparent 4px) 0 0,
-    linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
-    linear-gradient(to top, black 4px, transparent 4px) 0 100%,
-    linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
+    linear-gradient(to right, #F0803C 4px, transparent 4px) 0 0,
+    linear-gradient(to right, #F0803C 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #F0803C 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, #F0803C 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, #F0803C 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, #F0803C 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #F0803C 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, #F0803C 4px, transparent 4px) 100% 100%;
 
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -85,6 +85,6 @@
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   
-  border-bottom: 12px solid black;
+  border-bottom: 12px solid #F0803C;
   margin: 10px auto 0 auto;
 }

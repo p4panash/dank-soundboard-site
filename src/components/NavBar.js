@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./NavBar.css";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -9,7 +9,7 @@ function NavBar() {
 
   const onMouseEvent = (e) => {
     e.preventDefault();
-    navClass == "" ? setNavClass("Responsive") : setNavClass("")
+    navClass === "" ? setNavClass("Responsive") : setNavClass("")
   }
 
   return(
@@ -18,9 +18,9 @@ function NavBar() {
         <li><a href={void(0)} className="Icon" onClick={onMouseEvent}>
           <FontAwesomeIcon icon={faBars} />
         </a></li>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/commands">Commands</Link></li>
-        <li><Link to="/support">Support</Link></li>
+        <li><NavLink exact activeClassName="Selected" to="/">Home</NavLink></li>
+        <li><NavLink exact activeClassName="Selected" to="/commands">Commands</NavLink></li>
+        <li><NavLink exact activeClassName="Selected" to="/support">Support</NavLink></li>
       </ul>
     </div>
   );

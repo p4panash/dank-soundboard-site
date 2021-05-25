@@ -24,7 +24,7 @@ function App() {
           </Route>
         </div>
         <div className="Footer">
-          Made with &#129504; by <a href="https://discord.com/users/381449378810036234">Papanash#0488</a>
+          <p>Made with &#129504; by <a href="https://discord.com/users/381449378810036234">Papanash#0488</a></p>
         </div>
       </Router>
     </div>
