@@ -23,6 +23,12 @@ p {
   text-align: center;
 }
 
+.Footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 .Grid-container {
   display: grid;
   grid-template-rows: 75px auto 40px;
