@@ -10,8 +10,10 @@ p {
   color: white;
 }
 
-.Navbar {
-  grid-area: header;
+.Footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .Content {
@@ -23,18 +25,34 @@ p {
   text-align: center;
 }
 
-.Footer a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.Navbar {
+  grid-area: header;
 }
 
 .Grid-container {
   display: grid;
-  grid-template-rows: 75px auto 40px;
+  grid-template-rows: auto 40px;
   grid-template-areas: 
-    "header"
     "main"
     "footer";
-  height: 100vh;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .Bounce-container {
+    display: none;
+  }
+
+  .Navbar {
+    grid-area: main;
+  }
+
+  .Grid-container {
+    display: grid;
+    grid-template-rows: auto 40px;
+    grid-template-areas:
+      "main"
+      "footer";
+    height: 100vh;
+  }
 }

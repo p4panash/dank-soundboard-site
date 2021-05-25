@@ -11,10 +11,8 @@ function App() {
     <div className="Grid-container">
       <DankImages/>
       <Router>
-        <div className="Navbar">
-          <NavBar />
-        </div>
         <div className="Content">
+          <NavBar />
           <Route exact path="/">
             <Home/>
           </Route>
