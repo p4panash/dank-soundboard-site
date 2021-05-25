@@ -1,3 +1,19 @@
+@media only screen and (max-width: 600px) {
+  .Title-name {
+    font-size: 2em;
+  }
+
+  .Idiom {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .Title-name {
+    font-size: 3.5em;
+  }
+}
+
 .Home {
   display: flex;
   align-items: center;
@@ -5,7 +21,6 @@
 }
 
 .Title-name {
-  font-size: 3.5em;
   font-weight: bold;
   text-transform: capitalize;
   font-variant: small-caps;
@@ -17,11 +32,11 @@
 
 .Title-hero {
   display: block;
-  margin: 10vh auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 .Title-description {
-  margin-top: 15px;
+  margin-top: 10vh;
   text-align: center;
 }
 
@@ -58,4 +73,18 @@
 
 .Title button:hover {
   padding: 25px 40px;
+}
+
+.Idiom p{
+  text-align: center;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  
+  border-bottom: 12px solid black;
+  margin: 10px auto 0 auto;
 }
