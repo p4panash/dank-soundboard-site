@@ -4,7 +4,7 @@ import "./Home.css";
 function Home() {
   const [isButtonFocused, setIsButtonFocused] = useState(false);
   const [dankText, setDankText] = useState("WoW")
-  const texts = ["WoW", "Y u still here ?", "kek", '&#127814;']
+  const texts = ["WoW", "Y u still here ?", "kek", "🍌"]
 
   const tryMe = (
     <div className="Idiom">
@@ -20,7 +20,8 @@ function Home() {
 
   const onMouseEvent = (isFocused) => {
     if (isFocused) {
-      setDankText(texts[Math.floor((Math.random() * texts.length) - 1)])
+      var index = Math.floor((Math.random() * texts.length))
+      setDankText(texts[index])
     }
     setIsButtonFocused(isFocused)
   }
