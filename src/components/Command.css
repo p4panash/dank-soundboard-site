@@ -1,6 +1,6 @@
 .Command {
   width: 60%;
-  margin: 20px auto;
+  margin: 15px auto;
   background: #310d20;
   border-radius: 25px;
 }
@@ -8,4 +8,43 @@
 .Audio-player {
   flex-grow: 1;
   margin: 20px 25px;
+}
+
+.Preview {
+  justify-content: space-between;
+  margin: 0 25px;
+}
+
+.Row.Close-info {
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-bottom: 15px;
+}
+
+.Open-info {
+  display: flex;
+  align-items: center;
+}
+
+.Code {
+  margin: 10px 25px;
+  background: #171219;
+}
+
+.Code p {
+  margin: 10px 10px !important;
+  color: #F0803C;
+}
+
+.More-info p {
+  margin: 0 25px;
+  font-weight: bold;
+  background: none;
+}
+
+@media screen and (max-width: 601px) {
+  .Command {
+    width: 90%;
+  }
 }
