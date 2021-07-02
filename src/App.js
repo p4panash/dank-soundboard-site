@@ -17,7 +17,7 @@ function App() {
             <Home/>
           </Route>
           <Route exact path="/commands">
-            <Commands />
+            <Commands perPage={7}/>
           </Route>
           <Route exact path="/support">
             <Support />

@@ -21,20 +21,20 @@ class Command extends React.Component {
   render() {
     var moreInfo = (
       <div className="More-info">
-        <p className>Usage:</p>
+        <p>Usage:</p>
         <div className="Row Code">
           <p>{this.props.children}</p>
         </div>
         <p>Try it out:</p>
         <div className="Row">
           <audio className="Audio-player"controls>
-            <source src={this.props.source} type={this.props.audio_type}/>
+            <source src={this.props.source} type={this.props.audioType}/>
             Your browser does not support audio 😭
           </audio>
         </div>
         <div onClick={this.handleClick} className="Row Close-info"> 
           <FontAwesomeIcon icon={faAngleUp} style={{color: "white"}}/>
-          <p style={{margin: "0"}}>Close</p>
+          <p>Close</p>
         </div>
       </div>
     )
@@ -62,7 +62,7 @@ Command.defaultProps = {
   title: "Command Title",
   children: "sound command",
   source: "default.wav",
-  audio_type: "audio/wav"
+  audioType: "audio/wav"
 }
 
 export default Command;
