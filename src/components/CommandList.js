@@ -1,13 +1,14 @@
 import React from 'react';
 import Command from './Command';
+const { serverURI } = require('../config.json')
 
 class CommandList extends React.Component {
   render() {
     let commandList = this.props.data.map((object) => 
       <Command
         key={"command-" + object.id} 
-        title={object.title}
-        source={object.source}
+        title={object.name}
+        source={serverURI + object.source}
         audioType={object.audio_type}>
         {object.description}
       </Command>

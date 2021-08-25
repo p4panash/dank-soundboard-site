@@ -4,6 +4,7 @@ import '../Pagination.css'
 import CommandList from '../components/CommandList';
 import ReactPaginate from 'react-paginate';
 import axios from 'axios';
+const { serverURI } = require('../config.json')
 
 class Commands extends React.Component {
   constructor(props) {
@@ -23,8 +24,8 @@ class Commands extends React.Component {
   }
 
   fetchCommands() {
-    axios.get('https://60d9fc2a5f7bf100175478ab.mockapi.io/commands', {
-      params: {limit: this.props.perPage, page: this.state.pageSelected}
+    axios.get(`${serverURI}/commands`, {
+      params: {per_page: this.props.perPage, page: this.state.pageSelected}
     }).then(response => {
       this.setState(prevState => {
         let total_count = response.data.total_count;
