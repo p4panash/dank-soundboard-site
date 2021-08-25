@@ -8,8 +8,8 @@
 
 .Bouncing-images {
   position: relative;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin: 0 20px;
+  padding: 0;
   width: 30px;
 }
 
