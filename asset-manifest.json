@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dank-soundboard-site/static/css/main.8d046471.chunk.css",
-    "main.js": "/dank-soundboard-site/static/js/main.f2c7e63b.chunk.js",
-    "main.js.map": "/dank-soundboard-site/static/js/main.f2c7e63b.chunk.js.map",
+    "main.js": "/dank-soundboard-site/static/js/main.d0389f8e.chunk.js",
+    "main.js.map": "/dank-soundboard-site/static/js/main.d0389f8e.chunk.js.map",
     "runtime-main.js": "/dank-soundboard-site/static/js/runtime-main.d53e1b5d.js",
     "runtime-main.js.map": "/dank-soundboard-site/static/js/runtime-main.d53e1b5d.js.map",
     "static/js/2.ca67f5cd.chunk.js": "/dank-soundboard-site/static/js/2.ca67f5cd.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d53e1b5d.js",
     "static/js/2.ca67f5cd.chunk.js",
     "static/css/main.8d046471.chunk.css",
-    "static/js/main.f2c7e63b.chunk.js"
+    "static/js/main.d0389f8e.chunk.js"
   ]
 }
