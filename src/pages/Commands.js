@@ -4,7 +4,6 @@ import '../Pagination.css'
 import CommandList from '../components/CommandList';
 import ReactPaginate from 'react-paginate';
 import axios from 'axios';
-const { serverURI } = require('../config.json')
 
 class Commands extends React.Component {
   constructor(props) {
@@ -24,7 +23,7 @@ class Commands extends React.Component {
   }
 
   fetchCommands() {
-    axios.get(`${serverURI}/commands`, {
+    axios.get(`${process.env.REACT_APP_HOST}/commands`, {
       params: {per_page: this.props.perPage, page: this.state.pageSelected}
     }).then(response => {
       this.setState(prevState => {

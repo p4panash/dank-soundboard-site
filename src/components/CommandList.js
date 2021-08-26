@@ -1,6 +1,5 @@
 import React from 'react';
 import Command from './Command';
-const { serverURI } = require('../config.json')
 
 class CommandList extends React.Component {
   render() {
@@ -8,7 +7,7 @@ class CommandList extends React.Component {
       <Command
         key={"command-" + object.id} 
         title={object.name}
-        source={serverURI + object.source}
+        source={process.env.REACT_APP_HOST + object.source}
         audioType={object.audio_type}>
         {object.description}
       </Command>
