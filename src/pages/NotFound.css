@@ -1,0 +1,12 @@
+.Not-found {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.Not-found h2 {
+  text-transform: capitalize;
+  font-variant: small-caps;
+}

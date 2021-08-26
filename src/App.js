@@ -4,7 +4,8 @@ import NavBar from './components/NavBar';
 import Home from "./pages/Home";
 import Commands from "./pages/Commands";
 import About from "./pages/About";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -13,15 +14,14 @@ function App() {
       <Router>
         <div className="Content">
           <NavBar />
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route exact path="/commands">
-            <Commands perPage={7}/>
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/commands">
+              <Commands perPage={7}/>
+            </Route>
+            <Route exact path="/about" component={About}/>
+            <Route component={NotFound}/>
+          </Switch>
         </div>
         <div className="Footer">
           <p>Made with &#129504; by <a href="https://discord.com/users/381449378810036234">Papanash#0488</a></p>
