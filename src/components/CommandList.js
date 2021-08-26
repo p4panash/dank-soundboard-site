@@ -7,7 +7,7 @@ class CommandList extends React.Component {
       <Command
         key={"command-" + object.id} 
         title={object.name}
-        source={process.env.REACT_APP_HOST + object.source}
+        source={process.env.REACT_APP_HOST_API + object.source}
         audioType={object.audio_type}>
         {object.description}
       </Command>

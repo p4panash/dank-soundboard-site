@@ -23,7 +23,7 @@ class Commands extends React.Component {
   }
 
   fetchCommands() {
-    axios.get(`${process.env.REACT_APP_HOST}/commands`, {
+    axios.get(`${process.env.REACT_APP_HOST_API}/commands`, {
       params: {per_page: this.props.perPage, page: this.state.pageSelected}
     }).then(response => {
       this.setState(prevState => {
