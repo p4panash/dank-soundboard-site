@@ -15,11 +15,11 @@ function App() {
         <div className="Content">
           <NavBar />
           <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/commands">
+            <Route exact path="dank-soundboard-site/" component={Home}/>
+            <Route exact path="dank-soundboard-site/commands">
               <Commands perPage={7}/>
             </Route>
-            <Route exact path="/about" component={About}/>
+            <Route exact path="dank-soundboard-site/about" component={About}/>
             <Route component={NotFound}/>
           </Switch>
         </div>
