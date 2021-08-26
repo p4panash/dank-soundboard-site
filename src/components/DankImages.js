@@ -22,7 +22,7 @@ function DankImages() {
         let time = Math.floor(Math.random() * 4) + 2;
         let iterations = 12 / time;
         let ri = Math.floor((Math.random() * memes.length))
-        elem_arr.push(<BounceImage source={`/${memes[ri]}.png`} key={i} index={i} duration={time + "s"} iteration={iterations} 
+        elem_arr.push(<BounceImage source={`${process.env.PUBLIC_URL}/assets/${memes[ri]}.png`} key={i} index={i} duration={time + "s"} iteration={iterations} 
           marginLeftValue={margin_left} animationName={time === 4 ? "bounce" : "bounce, spin"} firstChild={i === 1 * start}/>)
       }
       setElements(elem_arr);

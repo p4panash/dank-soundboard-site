@@ -31,7 +31,7 @@ function Home() {
       <div className="Title">
         <h1 className="Title-name">DankBoard Bot</h1>
         <p className="Title-description">Such sounds, very board</p>
-        <img className="Title-hero" src="./bonk_doge-large.png" alt="Doge meme"/>
+        <img className="Title-hero" src={`${process.env.PUBLIC_URL}/assets/bonk_doge-large.png`} alt="Doge meme"/>
 
         <a href="https://discord.com/oauth2/authorize?client_id=752158811438972968&scope=bot">
           <button id="inviteButton"
