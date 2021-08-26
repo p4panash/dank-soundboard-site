@@ -18,9 +18,9 @@ function NavBar() {
         <li><a className="Icon" onClick={onMouseEvent}>
           <FontAwesomeIcon icon={faBars} />
         </a></li>
-        <li><NavLink exact activeClassName="Selected" to="/">Home</NavLink></li>
-        <li><NavLink exact activeClassName="Selected" to="/commands">Commands</NavLink></li>
-        <li><NavLink exact activeClassName="Selected" to="/about">About</NavLink></li>
+        <li><NavLink exact activeClassName="Selected" to="/dank-soundboard-site">Home</NavLink></li>
+        <li><NavLink exact activeClassName="Selected" to="/dank-soundboard-site/commands">Commands</NavLink></li>
+        <li><NavLink exact activeClassName="Selected" to="/dank-soundboard-site/about">About</NavLink></li>
       </ul>
     </div>
   );
