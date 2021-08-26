@@ -32,6 +32,7 @@ jobs:
           npm run build
         env:
           REACT_APP_HOST_API: ${{secrets.REACT_APP_HOST_API}}
+          CI: false
 
       # Runs a single command using the runners shell
       - name: Deploy
