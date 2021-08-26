@@ -10,6 +10,14 @@ p {
   color: white;
 }
 
+.Mt-0 {
+  margin-top: 0;
+}
+
+.Mt-50 {
+  margin-top: 50px;
+}
+
 .Footer a {
   color: #171219;
   text-decoration: none;

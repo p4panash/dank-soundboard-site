@@ -15,12 +15,12 @@ function NavBar() {
   return(
     <div id="Nav" className={navClass}>
       <ul>
-        <li><a href={void(0)} className="Icon" onClick={onMouseEvent}>
+        <li><a className="Icon" onClick={onMouseEvent}>
           <FontAwesomeIcon icon={faBars} />
         </a></li>
         <li><NavLink exact activeClassName="Selected" to="/">Home</NavLink></li>
         <li><NavLink exact activeClassName="Selected" to="/commands">Commands</NavLink></li>
-        <li><NavLink exact activeClassName="Selected" to="/support">Support</NavLink></li>
+        <li><NavLink exact activeClassName="Selected" to="/about">About</NavLink></li>
       </ul>
     </div>
   );

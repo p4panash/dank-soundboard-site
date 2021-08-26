@@ -3,7 +3,7 @@ import DankImages from './components/DankImages';
 import NavBar from './components/NavBar';
 import Home from "./pages/Home";
 import Commands from "./pages/Commands";
-import Support from "./pages/Support";
+import About from "./pages/About";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
           <Route exact path="/commands">
             <Commands perPage={7}/>
           </Route>
-          <Route exact path="/support">
-            <Support />
+          <Route exact path="/about">
+            <About />
           </Route>
         </div>
         <div className="Footer">
