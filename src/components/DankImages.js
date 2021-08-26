@@ -15,9 +15,6 @@ function DankImages() {
       let img_size = 70; // width + margins
       let amount = ~~(width / (img_size)) - 1;
       let margin_left = ((width - (amount * img_size)) / 2) + 20;
-      console.log(`width ${width}`)
-      console.log(`amount ${amount}`)
-      console.log(`margin left ${margin_left}`)
       let elem_arr = [];
 
       // TODO: add more dank icons and choose a random one for each component
