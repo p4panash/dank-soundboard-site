@@ -30,12 +30,13 @@ jobs:
         run: |
           npm install
           npm run build
+          cp ./404.html ./build
         env:
           REACT_APP_HOST_API: ${{secrets.REACT_APP_HOST_API}}
           CI: false
 
       # Runs a single command using the runners shell
-      - name: Deploy
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           BRANCH: gh-pages
