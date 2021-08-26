@@ -23,7 +23,6 @@ class Commands extends React.Component {
   }
 
   fetchCommands() {
-    console.log(process.env.REACT_APP_HOST_API)
     axios.get(`${process.env.REACT_APP_HOST_API}/commands`, {
       params: {per_page: this.props.perPage, page: this.state.pageSelected}
     }).then(response => {
